@@ -1,0 +1,63 @@
+input[type="text"] {
+  width: var(--input-width);
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid white;
+  background: transparent;
+  font-size: 30px;
+  text-align: center;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  text-align: center;
+}
+
+::placeholder {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  font-weight: 400;
+}
+
+.js-clock {
+  width: max-content;
+  height: max-content;
+  margin-top: 28vh;
+  margin-bottom: 20px;
+}
+
+.js-title {
+  font-weight: 200;
+  font-size: 160px;
+  color: white;
+  margin: 0px;
+}
+
+.js-greetings {
+  margin-top: 60px;
+  font-weight: 200;
+  color: white;
+  font-size: 50px;
+  margin: 0px;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

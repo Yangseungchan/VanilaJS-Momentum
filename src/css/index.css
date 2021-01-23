@@ -1,0 +1,63 @@
+@import "variables.css";
+@import "calculator.css";
+@import "todo.css";
+@import "weather.css";
+@import "greetings.css";
+
+* {
+  font-family: sans-serif;
+  font-weight: 200;
+  color: white;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #34495e;
+}
+
+.side-widgets_button {
+  cursor: pointer;
+  position: absolute;
+  top: 1.5vh;
+  right: var(--container-right);
+  margin-right: 10px;
+  z-index: 3;
+}
+
+.side-widgets {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0px;
+  padding-top: 60px;
+  z-index: 2;
+  width: 0;
+  overflow-x: hidden;
+  padding-top: 40px;
+  z-index: 2;
+  transition: 0.5s;
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+
+/* css for greeting and clock
+---> import from greetings.css */
+
+/* css for weather */
+/* ---> import from weather.css */
+
+/* css for calculator */
+/* ---> import from calculator.css */
+
+/* css for toDoList */
+/* ---> import from todo.css */

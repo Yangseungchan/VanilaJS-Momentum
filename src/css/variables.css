@@ -1,0 +1,6 @@
+:root {
+  --box-width: 250px;
+  --input-width: 400px;
+  --container-right: 1vw;
+  --background-black: rgba(0, 0, 0, 0.7);
+}

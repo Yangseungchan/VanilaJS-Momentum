@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Something New</title>
+    <title>Momentum</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./src/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <div class="js-clock">
@@ -13,18 +19,80 @@
       <input type="text" placeholder="What is your name?" />
     </form>
     <h4 class="js-greetings greetings"></h4>
-
     <form class="js-toDoForm">
       <input type="text" placeholder="Write a to do" />
     </form>
-    <ul class="js-toDoList">
-      <span>ToDo List</span>
-    </ul>
-    <span class="js-weather"></span>
-    <script src="clock.js"></script>
-    <script src="greeting.js"></script>
-    <script src="todo.js"></script>
-    <script src="bg.js"></script>
-    <script src="weather.js"></script>
+
+    <span class="side-widgets_button"><i class="fas fa-bars fa-lg"></i></span>
+    <div class="side-widgets">
+      <div class="js-weather">
+        <span class="weather-icon"></span>
+        <div class="weather-infos"></div>
+      </div>
+
+      <div class="js-calculator">
+        <div class="calculator-container">
+          <div class="calculator-container_row">
+            <span class="calculator-result">0</span>
+            <button
+              class="calculator-button calculator-button_last calculator-button_init button_gray"
+            >
+              C
+            </button>
+          </div>
+          <div class="calculator-container_row">
+            <button class="calculator-button calculator-button_1">1</button>
+            <button class="calculator-button calculator-button_2">2</button>
+            <button class="calculator-button calculator-button_3">3</button>
+            <button
+              class="calculator-button calculator-button_plus button_orange"
+            >
+              +
+            </button>
+          </div>
+          <div class="calculator-container_row">
+            <button class="calculator-button calculator-button_4">4</button>
+            <button class="calculator-button calculator-button_5">5</button>
+            <button class="calculator-button calculator-button_6">6</button>
+            <button
+              class="calculator-button calculator-button_minus button_orange"
+            >
+              -
+            </button>
+          </div>
+          <div class="calculator-container_row">
+            <button class="calculator-button calculator-button_7">7</button>
+            <button class="calculator-button calculator-button_8">8</button>
+            <button class="calculator-button calculator-button_9">9</button>
+            <button
+              class="calculator-button calculator-button_multi button_orange"
+            >
+              *
+            </button>
+          </div>
+          <div class="calculator-container_row">
+            <button class="calculator-button calculator-button_0">0</button>
+            <button class="calculator-button calculator-button_equal">=</button>
+            <button
+              class="calculator-button calculator-button_divide calculator-button_last button_orange"
+            >
+              /
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <ul class="js-toDoList">
+        <span class="js-toDoList_title">What you have to Do</span>
+      </ul>
+    </div>
+
+    <script src="./src/js/clock.js"></script>
+    <script src="./src/js/greeting.js"></script>
+    <script src="./src/js/todo.js"></script>
+    <script src="./src/js/bg.js"></script>
+    <script src="./src/js/weather.js"></script>
+    <script src="./src/js/calculator.js"></script>
+    <script src="./src/js/sidewidget.js"></script>
   </body>
 </html>

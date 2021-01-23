@@ -1,0 +1,44 @@
+.js-weather {
+  color: white;
+  font-size: 20px;
+  background-color: var(--background-black);
+  padding: 30px 25px;
+  border-radius: 10px;
+  width: 270px;
+  height: 7vh;
+  /* position: absolute;
+  top: 50px;
+  right: var(--container-right); */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.weather-icon {
+  font-size: 30px;
+}
+
+.weather-infos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-infos_current_temp {
+  font-size: 25px;
+  font-weight: 350;
+}
+
+.weather-infos_high_low_temp {
+  margin-top: 2px;
+  font-size: 18px;
+}
+
+.weather-infos_high_temp {
+  color: #e74c3c;
+  margin-right: 4px;
+}
+
+.weather-infos_low_temp {
+  color: #3498db;
+}

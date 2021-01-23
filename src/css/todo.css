@@ -1,0 +1,49 @@
+.js-toDoList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--background-black);
+  color: white;
+  width: var(--box-width);
+  height: 30vh;
+  padding: 25px 35px;
+  border-radius: 10px;
+  margin: 0px;
+  margin-top: 15px;
+  /* position: absolute; */
+  /* top: 60vh; */
+  /* right: var(--container-right); */
+}
+
+/* container of input for getting to do */
+.js-toDoForm {
+  margin-top: 80px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.js-toDoList_title {
+  text-align: center;
+  margin-bottom: 15px;
+  width: 100%;
+  font-size: 25px;
+}
+
+.tobeDeleted span:nth-child(2) {
+  text-decoration: line-through;
+}
+
+.delete-btn {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.todoContent {
+  font-size: 20px;
+}
