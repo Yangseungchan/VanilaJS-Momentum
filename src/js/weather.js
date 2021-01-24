@@ -39,8 +39,6 @@ function getWeatherIcon(id) {
 }
 
 function composeWeather(highTemp, lowTemp, currentTemp, place) {
-  console.log(weatherIcon);
-
   const placeName = document.createElement("span");
   placeName.classList.add("place-name");
   placeName.innerText = place;
@@ -82,10 +80,8 @@ function getWeather(lat, long) {
       highTemp = Math.floor(json.main.temp_max);
       place = json.name;
 
-      console.log(json.weather[0]);
-
       let weatherId = json.weather[0].id;
-      console.log(weatherId);
+
       // weatherId = 800;
       const weatherIconHTML = getWeatherIcon(weatherId);
       weatherIcon.innerHTML = weatherIconHTML;
