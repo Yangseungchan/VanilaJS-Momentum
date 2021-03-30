@@ -15,6 +15,7 @@ const btnMinus = document.querySelector(".calculator-button_minus");
 const btnMulti = document.querySelector(".calculator-button_multi");
 const btnDivide = document.querySelector(".calculator-button_divide");
 const btnEqual = document.querySelector(".calculator-button_equal");
+/* add comment */
 
 const OPERATOR = 1;
 const NUMBER = 0;
